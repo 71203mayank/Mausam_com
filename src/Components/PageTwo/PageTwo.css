@@ -1,0 +1,84 @@
+.PageTwo{
+    height:100vh;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.pgTwoTitle{
+    width:80vw;
+    margin: 0 10vw 50px 10vw ;
+    font-size:75px;
+    text-align: center;
+    color:aliceblue;
+}
+
+.pgTwoFeatures{
+    width:50vw;
+    position:absolute;
+    right:0;
+}
+.pgTwoTitle2{
+    width:50vw;
+    right:0;
+    font-size:50px;
+    text-align: center;
+    color:aliceblue;
+}
+.featureContainer{
+    width:50vw;
+    height:100px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.feature{
+    width:20vw;
+    text-align: left;
+    color:aliceblue;
+    margin-top:1.5vw;
+    /* font-size: 1.5vw; */
+}
+.featureHead{
+    font-size: 30px;
+    margin-bottom: 1vw;
+}
+
+.subscribe{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    overflow-x: hidden;
+}
+.offer{
+    width:50vw;
+    height:100vh;
+    display:flex;
+    justify-content: space-around;
+    background-color: #EFF5F5;
+    color:#497174;
+}
+.suboffer{
+    width:15vw;
+    /* height:20vw; */
+    margin:auto;
+    padding:1.5vw;
+    border:solid 2px #497174;
+    border-radius:20px;
+    background-color: #D6E4E5;
+}
+.forms{
+    width:50vw;
+    display:flex;
+    background-color: #497174;
+    color:#D6E4E5;
+    font-size: 1.5vw;
+}
+.formContainer{
+    padding:1vw;
+}
+
+.submit_Btn{
+    height:3vw;
+    width:10vw;
+    color:#497174;
+    margin:auto;
+}

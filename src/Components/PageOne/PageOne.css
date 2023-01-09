@@ -1,0 +1,56 @@
+.PageOne{
+    position: relative;
+    height:100vh;
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    overflow: hidden;
+
+    color:aliceblue;
+
+}
+.containerOne{
+    /* flex:1; */
+    margin-left:5vw;
+    width:40vw;
+    display:flex;
+    /* width:40vw; */
+    /* padding-left:10px; */
+    height:fit-content;
+}
+.containertwo{
+    /* flex:1; */
+    width:40vw;
+    display:flex;
+    overflow:hidden;
+    height:fit-content;
+    display:block;
+    /* width:40vw; */
+    /* padding-right:10px; */
+    /* text-align: right; */    
+}
+.city{
+    font-size: 5vw;
+    text-align: left;
+}
+.subcontainer{
+    width:100%;
+    font-size:2vw;
+    text-align:left;
+}
+
+.searchText{
+    /* padding:0; */
+    width:20vw;
+    height:2vw;
+    font-size: 1.25vw;
+    /* background: transparent;
+    border-color: aliceblue; */
+}
+.searchBtn{
+    margin:0.25vw;
+    height:2.5vw;
+    /* width:5vw; */
+    
+}

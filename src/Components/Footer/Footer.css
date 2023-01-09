@@ -1,0 +1,15 @@
+.Footer{
+    width:100%;
+    /* height:50vh; */
+    background-color: #f4f4f49b;
+    display:flex;
+    justify-content: space-between;
+    color:#497174;
+    /* margin:2vw 2vw 2vw 5vw; */
+    
+    /* background-color: #D6E4E5; */
+}
+.rightFooter{
+    font-size: 1.5vw;
+    margin:auto 2vw;
+}
