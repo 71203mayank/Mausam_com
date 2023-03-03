@@ -6,7 +6,7 @@ export class PageTwo extends Component{
         return(
             <>
             
-            <div className='PageTwo' style={{backgroundImage:'url(/Assets/pagetwoBG.jpg)',backgroundAttachment:"fixed"}}>
+            <div className='PageTwo' >
                 <Navbar/>
                 <div className='pgTwoContainer'>
                     <div className='pgTwoTitle'>
@@ -27,32 +27,32 @@ export class PageTwo extends Component{
             <div className="subscribe">
                 <div className="offer">
                     <div className='suboffer offer1'>
-                        <div style={{textAlign:'center',fontSize:'2vw'}}>Plan A<br></br>Rs 7/ day</div>
+                        <div  className='subOfferTitle'>Plan A<br></br>Rs 7/ day</div>
                         <div style={{padding:'0.5vw'}}>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum fugit voluptatum autem, eligendi quas quod maxime cum tenetur quaerat aspernatur facere quis ipsa nihil voluptate consectetur dolore corrupti dicta?
                         </div>
                     </div>
                     <div className='suboffer offer2'>
-                        <div style={{textAlign:'center',fontSize:'2vw'}}>Plan B<br></br>Rs 12/ day</div>
+                        <div className='subOfferTitle'>Plan B<br></br>Rs 12/ day</div>
                         <div style={{padding:'0.5vw'}}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum fugit voluptatum autem, eligendi quas quod maxime cum tenetur quaerat aspernatur facere quis ipsa nihil voluptate consectetur dolore corrupti dicta?
                         </div>
                     </div>
                 </div>
                 <div className="forms">
-                    <div style={{margin:'auto',width:'40vw'}}>
-                        <form action='/'>
+                    <div className='formMainDiv'>
+                        <form action='/' className='formSubDiv'>
                             <div className='formContainer'>
                                 <label for='name'>Name *</label><br/>
-                                <input type='text' id='name' required style={{width:"30vw",height:"1.5vw"}}></input><br/>
+                                <input type='text' id='name' className='inputOne' required ></input><br/>
                             </div>
                             <div className='formContainer'>
                                 <label for='email'>E-mail (NITC Mail) *</label><br/>
-                                <input type='email' pattern='.+@nitc.ac.in' id='email' required style={{width:"30vw",height:"1.5vw"}}></input><br/>
+                                <input type='email' className='inputOne' pattern='.+@nitc.ac.in' id='email' required></input><br/>
                             </div>
                             <div className='formContainer'>
                                 <label for='phone'>Phone no *</label><br/>
-                                <input type='tel' pattern='[1-9]{1}[0-9]{9}' id='phone' required style={{width:"15vw",height:"1.5vw"}}></input><br/>
+                                <input type='tel' className='inputTwo' pattern='[1-9]{1}[0-9]{9}' id='phone' required ></input><br/>
                             </div>
                             <div className='formContainer'>
                                 <span style={{marginRight:"2vw"}}>
@@ -66,10 +66,10 @@ export class PageTwo extends Component{
                                     <input type='radio' id='planB'></input><br/>
                                 </span>
                             </div>
-                            <div className='formContainer'>
-                                <input type='checkbox' style={{height:'1.5vw',width:'1.5vw'}}></input>Get weather report on your phone via SMS
+                            <div className='formContainer' style={{display:'flex'}}>
+                                <div><input type='checkbox' className='inputThree' ></input></div><div>Get weather report on your phone via SMS</div>
                             </div>
-                            <div style={{width:'40vw',display:'flex'}}><input type="submit" placeholder='Submit' value="Submit" className='submit_Btn' ></input></div>
+                            <div  className='formButton'><input type="submit" placeholder='Submit' value="Submit" className='submit_Btn' ></input></div>
 
                             
                         </form>

@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Navbar from "../Navbar/Navbar";
-import "./PageOne.css";
+import "./PageOne.css"; 
 
 
 export class PageOne extends Component{
@@ -78,30 +78,27 @@ export class PageOne extends Component{
         return(
             <div className="PageOne" style={{backgroundImage:str}}>
                 <Navbar/>
-                <div className="searchContainer" style={{width:'100%',display:"flex"}}>
-                    <div style={{margin:"auto"}}>
-
-                        <form>
+                <div className="searchContainer" style={{display:"flex", alignItems:'center', justifyContent:'space-around'}}>
+                        <form style={{margin:'auto'}}>
                             <input type="search" className="searchText" id="searchIt" ></input>
-                                <button type="button" className="searchBtn" onClick={this.handleOnClick} >Double click to Search</button>
+                            <button type="button" className="searchBtn" onClick={this.handleOnClick} ><img src='Assets/search_img.png' alt='search_icon'/></button>
                         </form>
-                    </div>
                 </div>
-                <div style={{display:"flex", justifyContent:"space-between"}}>
+                <div className='pageOneContainer'>
                     <div className="containerOne">
-                        <div style={{margin:"30% 0 0 0"}}>
-                        <div style={{fontSize:"5vw"}}>{this.state.weather.temp_c} <sup>o</sup>C <img alt='loading' src={this.state.Icon} style={{height:"5vw", width:"5vw"}}></img></div>
-                        <div style={{fontSize:"2vw"}}>{this.state.discription}</div>        
-                        <div style={{fontSize:"2vw"}}>Feels Like: {this.state.weather.feelslike_c} <sup>o</sup>C</div>
-                        <div style={{fontSize:"2vw"}}>Humidity: {this.state.weather.humidity}%</div>
-                        <div style={{fontSize:"2vw"}}>Precipitation: {this.state.weather.precip_mm} mm</div>
-                        <div style={{fontSize:"2vw"}}>Wind: {this.state.weather.wind_kph} kph </div>
-                        </div>
+                        {/* <div style={{margin:"30% 0 0 0"}} className='subContainerOne'> */}
+                            <div  className='subcontainerExcept' >{this.state.weather.temp_c} <sup>o</sup>C <img className="subContImg" alt='loading' src={this.state.Icon} ></img></div>
+                            <div  className='subcontainer'>{this.state.discription}</div>        
+                            <div  className='subcontainer'>Feels Like: {this.state.weather.feelslike_c} <sup>o</sup>C</div>
+                            <div  className='subcontainer'>Humidity: {this.state.weather.humidity}%</div>
+                            <div  className='subcontainer'>Precipitation: {this.state.weather.precip_mm} mm</div>
+                            <div  className='subcontainer'>Wind: {this.state.weather.wind_kph} kph </div>
+                        {/* </div> */}
 
                     </div>
                     
-                    <div className="containertwo" style={{display:"flex",justifyContent:"right"}}>
-                        <div style={{margin:"30% 5% 0 0"}}>
+                    <div className="containertwo" >
+                        {/* <div style={{margin:"30% 5% 0 0"}}> */}
                             
                             <div className="city ">
                                 {this.state.location.name}
@@ -110,7 +107,7 @@ export class PageOne extends Component{
                             <div className="country subcontainer">Country: {this.state.location.country}</div>
                             <div className="time subcontainer">{this.state.currDay}/{this.state.currMonth}/{this.state.currYear}, {this.state.currHrs}:{this.state.currMin}</div>
                             <div className="tz_id subcontainer">time-zone ID: {this.state.location.tz_id}</div>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
                 

@@ -5,9 +5,9 @@ export class Footer extends Component{
     render(){
         return(
             <div className='Footer'>
-                <div className='leftFooter' style={{margin:'2vw'}}>
-                    <div style={{textAlign:'center'}}><span style={{fontSize:'5vw'}}>Mausam.com</span><br/>
-                    <span style={{fontSize:'1.5vw'}}>by</span><br/><span style={{fontSize:'2vw'}}>MG Creations</span></div>
+                <div className='leftFooter'>
+                    <div style={{textAlign:'center'}}><span className='footerSpan1' >Mausam.com</span><br/>
+                    <span className='footerSpan2'>by</span><br/><span className='footerSpan3'>MG Creations</span></div>
                 </div>
                 <div className='rightFooter'>
                     <div>E-mail: askMausam@email.com</div>
