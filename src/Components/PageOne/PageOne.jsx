@@ -78,8 +78,8 @@ export class PageOne extends Component{
         return(
             <div className="PageOne" style={{backgroundImage:str}}>
                 <Navbar/>
-                <div className="searchContainer" style={{display:"flex", alignItems:'center', justifyContent:'space-around'}}>
-                        <form style={{margin:'auto'}}>
+                <div className="searchContainer" style={{display:"flex", alignItems:'center'}}>
+                        <form style={{margin:'auto',display:"flex", alignItems:'center'}}>
                             <input type="search" className="searchText" id="searchIt" ></input>
                             <button type="button" className="searchBtn" onClick={this.handleOnClick} ><img src='Assets/search_img.png' alt='search_icon'/></button>
                         </form>

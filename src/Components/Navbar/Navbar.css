@@ -5,13 +5,13 @@
     justify-content: space-between;
 }
 .NavTitle{
-    /* position:relative; */
-    /* top:1vw; */
+    position:relative;
+    top:1vw;
     font-size:25px;
     width:200px;
     display: flex;
     justify-content: space-around;
-    /* margin-left:1.5vw; */
+    margin-left:1.5vw;
 }
 .NavLinks{
     height:5vw;
@@ -22,8 +22,8 @@
 .links{
     color: aliceblue;
     text-decoration: none;
-    /* position:relative; */
-    /* top:1.5vw; */
+    position:relative;
+    top:1.5vw;
     font-size: 20px;
     /* margin-right:1.5vw; */
 }

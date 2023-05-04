@@ -11,6 +11,9 @@
 
 }
 .pageOneContainer{
+    position:absolute;
+    top:45%;
+    width:100%;
     display:flex;
     justify-content:space-between;
 }
@@ -25,34 +28,40 @@
     width:50px;
 }
 .containertwo{
-    width:40vw;
+    /* position:relative; */
+    /* right: 5vw; */
+    float:right;
+    /* width:40vw; */
+    width:fit-content;
+    margin-right: 5vw;
     display:flex;
     overflow:hidden;
     height:fit-content;
     display:block;   
 }
 .city{
-    font-size: 5vw;
+    font-size: 42px;
     text-align: left;
 }
 .subcontainer{
     width:100%;
-    font-size:2vw;
+    font-size:24px;
     text-align:left;
 }
 .subcontainerExcept{
-    font-size: 24px;
+    font-size: 42px;
 }
 
 .searchText{
-    width:20vw;
-    height:2vw;
-    font-size: 1.25vw;
+    width:250px;
+    height:24px;
+    font-size:16px;
 }
 .searchBtn{
     /* margin:0.25vw; */
-    height:2vw;
-    width:2vw;    
+    height:24px;
+    width:24px;
+    flex-direction: column;    
 }
 .searchBtn img{
     height:100%;
@@ -89,13 +98,15 @@
         top:25%;
         display:flex;
         flex-wrap: wrap-reverse;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
     .containerOne{
         margin-left:15vw;
         width:80vw;
+        float:left;
         display:block;
         height:fit-content;
+        /* padding-inline-start: 0; */
         padding-block: 20px;
 
         /* margin-left:5vw;
@@ -110,6 +121,7 @@
         display:block;  
         margin-left: 15vw; 
         padding-block:20px;
+        float:none;
     }
     .city{
         font-size: 30px;
